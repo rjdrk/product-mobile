@@ -61,12 +61,6 @@ const ProductScreenView = () => {
                     <Text className="text-lg font-semibold text-gray-700 mb-2">Descripción</Text>
                     <Text className="text-gray-600 mb-6">{selectedProduct.descripcion}</Text>
 
-                    <TouchableOpacity
-                        className={`rounded-lg py-3 px-4 items-center ${selectedProduct.stock > 0 ? 'bg-blue-500' : 'bg-gray-400'}`}
-                        disabled={selectedProduct.stock <= 0}
-                    >
-                        <Text className="text-white font-bold text-lg">Añadir al carrito</Text>
-                    </TouchableOpacity>
                 </View>
             </ScrollView>
         </SafeAreaView>
