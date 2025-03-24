@@ -1,8 +1,10 @@
 import axios from 'axios';
 import { API_URL } from '@env';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-const apiUrl = API_URL;
 
+//const apiUrl = API_URL;
+const apiUrl = 'http://10.0.2.2:5170/api';
+console.log(apiUrl);
 if (!apiUrl) {
     throw new Error('Variable de entorno API_URL no se encuentra definida');
 }

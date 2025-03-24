@@ -69,6 +69,7 @@ export default function StackLayout() {
         <Stack>
             <Stack.Screen name="home/index" options={{ headerShown: false }} />
             <Stack.Screen name="login/index" options={{ headerShown: false }} />
+            <Stack.Screen name="product/[id]" options={{ title: 'Detalle del producto', headerShown: false }} />
         </Stack>
     );
 }

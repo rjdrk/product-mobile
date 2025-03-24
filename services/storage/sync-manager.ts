@@ -37,7 +37,7 @@ export class SyncManager implements ISyncManager {
 
             if (productKeys.length > 0) {
                 await AsyncStorage.multiRemove(productKeys);
-                console.log('🧹 Todos los datos de productos han sido eliminados');
+                console.log('Todos los datos de productos han sido eliminados');
             }
         } catch (error) {
             console.error('Error al limpiar todos los datos:', error);

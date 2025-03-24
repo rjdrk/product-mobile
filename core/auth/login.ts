@@ -4,6 +4,7 @@ import api from '../api/axios-config';
 export const login = async (body: any) => {
 
     try {
+        console.log(body)
         const response = await api.post('/auth/login', body);
         const token = response.data.token;
         await AsyncStorage.setItem("authToken", token);
